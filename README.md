@@ -1,6 +1,6 @@
 # Planet training workshop
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/samapriya/training-workshop/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/samapriya/education-research/master)
 
 
 This repo contains all materials used on Planet's training workshops. 
@@ -11,7 +11,7 @@ Below you will find environment set up instructions, decks and other learning re
 ## Getting the repo
 This is a public Planet repository so you don't have to SSH authenticate to clone to your local environment. You can simply use
 ```
-git clone git@github.com:planetlabs/training-workshop.git
+git clone https://github.com/samapriya/education-research.git
 ```
 In case you do have to authenticate, you'll have to make sure your SSH keys are added to your Github profile. Only in case you **don't** have SSH keys already, generate them using
 ```bash
