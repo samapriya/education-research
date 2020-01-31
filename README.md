@@ -3,8 +3,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/samapriya/education-research/master)
 
 
-This repo contains all materials used on Planet's training workshops. 
-Below you will find environment set up instructions, decks and other learning resources to have you started on using Planet's APIs and tools.
+This repo contains all materials used on Planet's training workshops based on [training-workshop materials]. Below you will find environment set up instructions, decks and other learning resources to have you started on using Planet's APIs and tools.
 
 # Development Environment Setup
 
@@ -13,20 +12,9 @@ This is a public Planet repository so you don't have to SSH authenticate to clon
 ```
 git clone https://github.com/samapriya/education-research.git
 ```
-In case you do have to authenticate, you'll have to make sure your SSH keys are added to your Github profile. Only in case you **don't** have SSH keys already, generate them using
-```bash
-ssh-keygen -t rsa
-```
-Press enter when asked if you want to save the keys to id_rsa and, if you want, enter a passphrase when asked to.
-
-Print out your keys, copy them and add them to your Github's saved keys.
-```bash
-cat .ssh/id_rsa.pub
-```
-
 
 ## The Basics
-The following tools are regularly used in Planet School's guides:
+The following tools are regularly used in [Planet School's guides from developers page](https://developers.planet.com/planetschool/):
 
 * Python 3x (Note: Python 2.7 is in legacy support)
 * cURL
@@ -78,7 +66,7 @@ Some useful links:
 * [Tiles API docs](https://developers.planet.com/docs/data/tile-services/)
 * [Public APIs changelog](https://developers.planet.com/changelog/)
 * [Planet Python Client](https://github.com/planetlabs/planet-client-python)
-* [Planet integrations (QGIS plug-in)](https://developers.planet.com/integrations/) 
+* [Planet integrations (QGIS plug-in)](https://developers.planet.com/integrations/)
 * [Quickstart guides](https://developers.planet.com/docs/quickstart/)
 * [Planet school](https://developers.planet.com/planetschool/)
 * [Jupyter notebooks](https://github.com/planetlabs/notebooks)
