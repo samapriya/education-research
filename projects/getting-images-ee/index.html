@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Planet Education & Research">
+        <meta name="description" content="Education & Research">
       
       
         <link rel="canonical" href="https://samapriya.github.io/education-research/projects/getting-images-ee/">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Getting Images into Google Earth Engine - Planet Education & Research</title>
+        <title>Getting Images into Google Earth Engine - Education & Research</title>
       
     
     
@@ -100,7 +100,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://samapriya.github.io/education-research" title="Planet Education & Research" class="md-header-nav__button md-logo">
+        <a href="https://samapriya.github.io/education-research" title="Education & Research" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -113,7 +113,7 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              Planet Education & Research
+              Education & Research
             </span>
             <span class="md-header-nav__topic">
               
@@ -168,7 +168,7 @@
     </div>
   
   <div class="md-source__repository">
-    planet-education
+    education-research
   </div>
 </a>
           </div>
@@ -192,12 +192,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://samapriya.github.io/education-research" title="Planet Education & Research" class="md-nav__button md-logo">
+    <a href="https://samapriya.github.io/education-research" title="Education & Research" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
     </a>
-    Planet Education & Research
+    Education & Research
   </label>
   
     <div class="md-nav__source">
@@ -215,7 +215,7 @@
     </div>
   
   <div class="md-source__repository">
-    planet-education
+    education-research
   </div>
 </a>
     </div>
@@ -401,9 +401,38 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Getting Images into Google Earth Engine
+      </label>
+    
     <a href="./" title="Getting Images into Google Earth Engine" class="md-nav__link md-nav__link--active">
       Getting Images into Google Earth Engine
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#third-party-tools" class="md-nav__link">
+    Third Party tools
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -574,6 +603,22 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#third-party-tools" class="md-nav__link">
+    Third Party tools
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -591,9 +636,10 @@
 <p>For the simplest users getting images into GEE begins with the Image upload tool located inside GEE. Once you have added the filename you can edit additional metadata such as start time, cloud cover information if you have that from the metadata file among other things. This tool does not have a way for you to ingest any metadata automatically so it has to be fed manually.</p>
 <p>The image name is automatically filled in with the filename that you select when uploading.</p>
 <p><img alt="Image Upload" src="../../images/upload_gee.gif" /></p>
-<p>Note you cannot select more than one image and upload as a single image if they overlap each other. To handle which we have the concept of image collections. Where you can upload many images. To import images into collections, you have to either import them manually as images first and then copy them into the collection one by one or for now use an external tool to help.</p>
-<p>For now you can use the tool I made to batch upload collections along with their metadata into Google Earth Engine. You can read about the tool, it's setup and it's operation at <a href="https://medium.com/planet-stories/planet-people-and-pixels-a-data-pipeline-to-link-planet-api-to-google-earth-engine-1166606445a8">this Planet Story</a></p>
+<p>Note you cannot select more than one image and upload as a single image if they overlap each other. To handle which we have the concept of image collections. Where you can upload many images. To import images into collections, you have to either import them manually as images first and then copy them into the collection one by one or for now use external tools to help.</p>
 <p>Incase you have a Google Cloud Storage bucket you can also push images automatically to be ingested into GEE. Though this requires interaction with gsutil and starting ingestion function for each image. The GEE guide for image ingestion can be <a href="https://developers.google.com/earth-engine/image_upload">found here</a></p>
+<h4 id="third-party-tools">Third Party tools<a class="headerlink" href="#third-party-tools" title="Permanent link">&para;</a></h4>
+<p>For now you can use the tool I made to batch upload collections along with their metadata into Google Earth Engine. You can read about the tool, it's setup and it's operation at <a href="https://medium.com/planet-stories/planet-people-and-pixels-a-data-pipeline-to-link-planet-api-to-google-earth-engine-1166606445a8">this Planet Story</a></p>
                 
                   
                 
