@@ -589,7 +589,7 @@
                 
                 <h1 id="reducers-charts-in-earth-engine">Reducers &amp; Charts in Earth Engine<a class="headerlink" href="#reducers-charts-in-earth-engine" title="Permanent link">&para;</a></h1>
 <p>While single image operations are direct and can be applied to the imagery for a one to one result. Applying any kind of analysis on a single image means you have to call the image and run the analysis which is quick and easy. To be able to turn this same into a function that you can iterate over an entire collection requires us to convert a single analysis to a function. A function is then mapped or run over an entire collection. To avoid any errors make sure that the collection images are consistent and have same name and number of band and characteristics.</p>
-<p><center><img alt="Imagery" src="/images/ee_reduce.png" /></center>
+<p><center><img alt="ee_reduce" src="https://user-images.githubusercontent.com/6677629/75258835-0ef73300-57b5-11ea-9fc3-ddd5479a131c.png" /></center>
 <center><strong>Source: <a href="https://developers.google.com/earth-engine/reducers_image_collection">Image Collection Reductions from Google Earth Engine</a></strong></center></p>
 <p>For this setup we look at how we added Landsat 5 Surface Reflectance data earlier , filtering it using WRS Path and Row and further using Cloud cover for the scene. The next step we are building an function to calculate Normalized Difference Vegetation Index (NDVI) over the entire collection which takes an image collection and iteratively passes an image to the function. The resultant structure is also an image collection where we are returning a single band which is the NDVI. Note that we also renamed the band to NDVI since they are not autorenamed. Now the additional step we added here was running the produced collection through a median reducer. We can then print the median values. The last step we create a setup for the chart and the plot the chart of the median</p>
 <p><div class="codehilite"><pre><span></span><span class="cm">/*Add some field points and name the geometry</span>
@@ -628,8 +628,8 @@
 <span class="nx">Map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">ndviav</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s1">&#39;NDVI_median&#39;</span><span class="p">).</span><span class="nx">rename</span><span class="p">(</span><span class="s1">&#39;NDVI&#39;</span><span class="p">),</span><span class="nx">ndvivis</span><span class="p">,</span><span class="s2">&quot;NDVI Median&quot;</span><span class="p">)</span>
 <span class="nx">print</span><span class="p">(</span><span class="nx">ndviav</span><span class="p">)</span>
 </pre></div>
-<center><img alt="ndvi" src="/images/ee_ndvi.jpg" /></center>
-<center><img alt="chart" src="/images/ee_chart.jpg" /></center>
+<center><img alt="ee_ndvi" src="https://user-images.githubusercontent.com/6677629/75259155-93e24c80-57b5-11ea-8580-b9fc83bc5bde.jpg" /></center>
+<center><img alt="ee_chart" src="https://user-images.githubusercontent.com/6677629/75259230-ad839400-57b5-11ea-92d1-0514554c4499.jpg" /></center>
 <center><strong>Top: Field points to look at median NDVI, Bottom: Chart generated from field point</strong></center></p>
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">ndvionly</span><span class="o">=</span><span class="nx">ndviav</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s1">&#39;NDVI_median&#39;</span><span class="p">).</span><span class="nx">rename</span><span class="p">(</span><span class="s1">&#39;NDVI&#39;</span><span class="p">)</span>
 
